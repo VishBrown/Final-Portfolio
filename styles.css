@@ -11,7 +11,7 @@ body, html {
 
 header {
     width: 100%;
-    height: 107px;
+    height: 87px;
     background-color: #271168;
     display: flex;
     align-items: center;
@@ -37,7 +37,7 @@ header nav {
 header nav a {
     text-decoration: none;
     color: white;
-    margin-left: 20px;
+    margin-left: 50px;
     font-size: 24px;
 }
 
@@ -48,9 +48,9 @@ header nav a {
 
 .intro {
     left: 80px;
-    top: 283px;
+    top: 120px;
     width: 636px;
-    font-size: 64px;
+    font-size: 50px;
     line-height: 95px;
     font-weight: 700;
 }
@@ -64,7 +64,7 @@ header nav a {
 }
 
 .about {
-    left: 747px;
+    left: 900px;
     top: 270px;
     width: 396px;
     height: 203px;
@@ -78,8 +78,8 @@ header nav a {
 }
 
 .view-projects-button {
-    left: 747px;
-    top: 483px;
+    left: 900px;
+    top: 553px;
     width: 276px;
 }
 
@@ -95,4 +95,25 @@ button {
 
 button:hover {
     background-color: #1f0e5a;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #271168;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer h3 {
+    margin-bottom: 10px;
 }

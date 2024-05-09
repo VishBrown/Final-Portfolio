@@ -5,39 +5,107 @@ body, html {
     background: #F9F5F2;
 }
 
+
 header {
+    width: 100%;
+    height: 107px;
     background-color: #271168;
-    color: white;
-    padding: 10px 20px;
-    text-align: right;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;  /* Adjust padding */
+    box-sizing: border-box;
+    position: relative;
+}
+
+header .logo {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 80px;  /* Adjust size as needed */
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    width: calc(100% - 100px);  /* Leave space for logo */
 }
 
 header nav a {
     text-decoration: none;
     color: white;
-    margin-left: 20px;
+    margin-left: 50px;
+    font-size: 24px;
 }
 
+
 .container {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
+    display: flex;       /* Use Flexbox to arrange children */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    width: 100%;         /* Take full width of the viewport */
+    margin: 20px auto;   /* Top and bottom margin for spacing, auto for horizontal centering */
+    text-align: center;  /* Center text inside the container */
 }
 
 h1 {
     color: #271168;
 }
 
+a {
+    text-decoration: none; /* Removes underline from all anchor tags */
+    color: inherit; /* Ensures links inherit the text color from their parent elements */
+}
+
 .project {
-    background-color: white;
-    border-radius: 8px;
+    display: flex;
+    justify-content: space-between; /* Keep text and image spaced out */
+    align-items: center; /* Vertically align text and image */
+    background-color: #F9F5F2;
+    border-radius: 30px;
+    border: 1px solid #271168;
     padding: 20px;
-    margin: 20px 0;
+    margin: 20px 0;       /* Margin around each project for spacing */
+    width: 904px;         /* Fixed width for consistency */
+    height: 279px;        /* Fixed height for consistency */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.project h2, .project p, .project span {
-    margin: 10px 0;
+.project-text {
+    width: 60%; /* Adjust the width as needed to fit the content */
+    padding-right: 20px; /* Add some padding between the text and the image */
+}
+
+.project-text h2, .project-text p, .project-text span {
+    color: #271168;
+    font-family: "DM Sans";
+    font-size: 24px;
+    line-height: 35px;
+}
+
+.project-text h2 {
+    font-weight: 400; /* Normal weight for the project title */
+}
+
+.project-text p {
+    font-weight: 700; /* Bold weight for the description */
+}
+
+.project-image {
+    width: 247px; /* Width of the image container */
+    height: 218px; /* Height of the image container */
+    border-radius: 14px;
+    overflow: hidden; /* Ensures nothing spills out of the container */
+    flex-shrink: 0; /* Prevents the image container from shrinking */
+    border-color: #271168;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.project-image img {
+    width: 100%; /* Ensure the image covers the full width of the container */
+    height: 100%; /* Ensure the image covers the full height of the container */
+    object-fit: cover; /* Ensures the image covers the container without distortion */
 }
 
 footer {
