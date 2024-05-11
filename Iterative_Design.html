@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Handin: Responsive Redesign</title>
+    <link rel="stylesheet" href="styles_Responsive_Redesign.css">
+</head>
+<header>
+    <a href="./index.html">
+        <img src="./assets/logo.png" alt="Logo" class="logo">
+    </a>
+    <nav>
+        <a href="./projecthome.html">Project</a>
+        <a href="./abouthome.html">About</a>
+        <a href="#resume">Resume</a>
+    </nav>
+</header>
+<body>
+    <main>
+        <h1>Zest Shopping Cart Iterative Design</h1>
+        <div class="introduction">
+            <h2>Introduction</h2>
+            <p id="defining_text" class="sub_section_text karla-regular"><a id="zest_link" class="link" href="https://www.zest.co/?_gl=1*kcftf4*_ga*MTY0ODU5MTcwNS4xNzE0MDIxMDQ5*_ga_BET53J5RZ9*MTcxNDAyMTA0OS4xLjEuMTcxNDAyMTA0OS42MC4wLjA.">Zest</a>
+                is a corporate gifting intermediary that connects brands to corporate gifters in streamlined and intuitive fashion. Zest approached our team with a feature request to add a shopping cart 
+                to their existing UI consistent with their style and practices. </p>            
+            <h3>Objectives</h3>
+            <ul>
+                <li>Complete the full iterative design process in solving a design problem</li>
+                <li>Practice building collaborative designs with a team</li>
+                <li>Practice providing and receiving design critiques</li>
+                <li>Create an interactive interface from start to finish that will act as an effective portfolio piece</li>
+                <li>Interact with a startup founder (or someone leading product, engineering or design) who will be your client</li>
+
+            </ul>
+        </div>
+
+        <div class="analyzing-webpage">
+            <h2>Understanding the Problem</h2>
+            <h3>Bulls Eye customer description</h3>
+            <ul>
+                <li>Gift buyers who are purchasing more than one product</li>
+                <li>Gift buyer sending multiple products to each recipient</li>
+                <li>Gift buyer sending multiple qty of the same thing to each recipient</li>
+            </ul>
+            <h3>User Pain Points</h3>
+            <ul>
+                <li>When a brand has a large catalog, gift buyer’s selections are not easily accessible, and they forget what they selected or are frustrated trying to find it</li>
+                <li>The current design does have quantity selection, and customer cannot send more than 1 of each product to a recipient</li>
+            </ul>
+            <h4>With some of the pain points and target customer information in mind we had a few questions we wanted to ask to better understand the feature Zest wanted from us.</h4>
+            <h3>Clarifying Questions</h3>
+            <ul>
+                <li>Can the user select products across different brands/partners? If not, is this a desired functionality for the future? Example: I want to select chocolates from a chocolate partner and flowers from another flower partner and send it to the same recipients.</li>
+                <li>Are we expected to allow multiple recipients to get unique gift configurations in one shopping experience? For example, I want to send 3 items (2 of item A and 1 of item B) to 3 different recipients. Recipient 1 gets the two item A’s and Recipient B gets one item B. Is this the desired behavior in the feature request?</li>
+                <li>In the project brief, one of the success metrics mentioned was "reduced errors during checkout." Could you please provide more details on the current issues users encounter during the checkout process?</li>
+            </ul>
+        </div>
+
+        <div class="speed-sketches">
+            <h2>The Process:</h2>
+            <h4>1. Sketching:</h4>
+            <p>Each of sketched out rough ideas of what we thought the shopping cart looked like</p>
+            <div class="sketches-container">
+                <img src="assets/sketch1.png" class="sketch-image-1" alt="sketch image 2" id="sketch image 2">
+                <img src="assets/sketch2.png" class="sketch-image-1" alt="sketch image 3" id="sketch image 3">
+                <img src="assets/sketch3.png" class="sketch-image-1" alt="sketch image 4" id="sketch image 4">
+                <img src="assets/sketch4.png" class="sketch-image" alt="sketch image 5" id="sketch image 5">
+                <img src="assets/sketch5.png" class="sketch-image" alt="sketch image 1" id="sketch image 1">
+            </div>
+            <h4>2. Wireframes:</h4>
+            <p>We felt our designs had strong merit and fit within the style Zest had cultivated and wanted to create some beginner wireframes to visualize our ideas in a more realistic implementation.</p>
+            <div class="wireframes-container">
+            
+                <div class="wireframe-wrapper">
+                    <img src="./assets/wireframe1.png" alt="Wireframe 1" class="wireframe-image">
+                </div>
+                <div class="wireframe-wrapper">
+                    <img src="./assets/wireframe2.png" alt="Wireframe 2" class="wireframe-image">
+                </div>
+            </div>
+            <p>We added a quantity indicator to the card item itself and added a "side-cart". The purpose of our decision to add this side cart was to tackle the pain point of gifter's not knowing what was already in their cart while shopping, especially on larger orders. This feature would allow the gifter to simultaneously browse the shop and view the contents of their cart.</p>
+            <h4>3. Critique:</h4>
+            <p>We put together a loom video going over our design in more detail to send to Zest for feedback. But before sending it to the client we had subject matter experts give us critiques on our existing degigns as a next step to gain insight on what we had created so far.</p>
+            <div class="video_div">
+                <video id="zest_demo_video" width="720" height="520" controls>
+                  <source src="assets/Zest Demo.mp4" type="video/mp4">
+                </video>
+            </div>
+            <h4>4. Subject Matter Expert Critique:</h4>
+            <ul>
+                <li>Having the featured gifts dropdown above the cart is confusing. Does this mean you are sorting the cart or the items being browsed?</li>
+                <li>The scheme for displaying item quantity is intuitive and does not present any "suprises"</li>
+                <li>An addition of a cart button or symbol prior to the cart popping out from an item being added would inform the user there is a cart feature they will be able to utilized later.</li>
+            </ul>
+            <h4>5. Client Check In</h4>
+            <p>Next we reached out to the client with our loom video for feedback. We asked questions at the end of the loom video we felt would help us better fufill the feature request. The answeres to those questions are below.</p>
+            <ul>
+                <li>Question: The UX for multiple item selection, is it clear and intuitive?</li>
+                <li>Answer: Yes and no. The interface with "+ QYT -" showing up after each product selection is easy to use. However, it is unclear at this point of the experience if QTY is the number of products each recipient will receive or the number of recipients in the entire order. Said differently, if the user is sending gifts to 10 recipients and each recipient is to receive 2 Mini Artist box, should the user set the quantity to 10 or 2? Making this clear will be key to launching this feature.</li>
+                <p> </p>
+                <li>Question: Does it align with Zest's style components?</li>
+                <li>Answer: Yes, on point!</li>
+                <p> </p>
+                <li>Question: Our decision to choose the side cart bar, it is a meaningful competitive differentiator?</li>
+                <li>Answer: We don't see the side cart bar as a meaningful competitive differentiator, but also it does not need to be. We like the concept of the sidebar very much, it solves the problem you captured at the beginning of the loom and gives the user a clear understanding of what they have selected. We're curious where you would put the side cart in mobile view. We'll love to see a mockup for that.</li>
+            </ul>
+        </div>
+
+        <div class="low-fidelity-wireframes">
+            <h2>Improved Wireframes</h2>
+            <p>With the subject matter expert advice and critique along with the feeback the client provided 
+                the team, we revised our wireframe. We added the cart to the top corner when the side-cart is not popped out so the user can know about the cart feature and is not suprised by it
+                later when it pops out when an item is added. Addittionally we changed our tags to show not just quantity but to display that quantity is intended per user. This distinction is reinforced
+                by the notice at the top of the sidecart.</p>
+            <p>Mobile wireframes were also added with a slightly modified UI. Due to the lack of UI real-estate, the cart was designed to cover the whole screen upon selection. The items are also listed in a row instead of a matrix.
+                The biggest change was the addition of a newer section at the bottom for the user to be able to review their items before checking out. This ties back to the original goal of keeping the user informed of their selections before they make a purchase. 
+            </p>
+            <div class="wireframes-container">
+                <div id="highfi-wireframes">
+                    <img src="assets/hi-fi2.png" class="sketch-image" alt="wireframe image 2" id="hifi-wireframe image 2">
+                    <img src="assets/hi-fi1.png" class="sketch-image" alt="wireframe image 1" id="hifi-wireframe image 1">
+                    <img src="assets/hi-fi3.png" class="sketch-image" alt="wireframe image 3" id="hifi-wireframe image 3">
+                </div>
+                <div id="highfi-wireframes-mobile">
+                    <img src="assets/Hi-Fi-Mobile-Iterative-Redesign-1.png" class="sketch-image" alt="wireframe image 4" id="hifi-wireframe image 4">
+                    <img src="assets/Hi-Fi-Mobile-Iterative-Redesign-2.png" class="sketch-image" alt="wireframe image 5" id="hifi-wireframe image 5">
+                    <img src="assets/Hi-Fi-Mobile-Iterative-Redesign-3.png" class="sketch-image" alt="wireframe image 6" id="hifi-wireframe image 6">
+                </div>
+            </div>
+        </div>
+        <div class="low-fidelity-wireframes">
+            <h2>Hi-Fi Prototyping:</h2>
+            <p>Now we are finally ready to put our redesigned wireframes together into a living breathing prototype to show exactly what the user flow will look like with out design</p>
+            <div class="video_div">
+                <video id="zest_demo_video" width="720" height="520" controls>
+                  <source src="assets/Zest.mp4" type="video/mp4">
+                </video>
+              </div>
+        </div>
+        <div class="low-fidelity-wireframes">
+            <h2>Final Feedback:</h2>
+            <p>During our meeting with the company, we presented an alternative method for the user shopping experience, which was well received. We also confirmed that our current approach is effective, especially since we considered the company's preference for minimal changes. We received the following critical feedback:</p>
+            <h4>Desktop Critique:</h4>
+            <ul>
+                <li>It is unclear how the quantity per recipient changes when items are added or removed using the icon.</li>
+                <li>The color of the Remove button is not visible enough.</li>
+                <li>Consider making the cart accessible across all sections of the site.</li>
+                <li>The Brightland logo appears twice in the cart.</li>
+            </ul>
+            <h4>Mobile Critique:</h4>
+            <ul>
+                <li>The title in the Review Items Section is confusing. It's unclear whether it refers to each recipient or to all items collectively.</li>
+        </div>
+        <div class="low-fidelity-wireframes">
+            <h2>Final Feedback implementation</h2>
+            <p>After reviewing the feedback from the meeting, we decided to redesign the desktop version of the shopping cart, focusing mostly on the opened cart and the item selection.</p>
+            <h4>The main modifications implemented were the following:</h4>
+            <ul>
+                <li>In order to avoid showing the logo in different parts of the screen, we decided to fix the top section of the interface. In this manner, regardless of the scroll position, the logo of the store is always visible on the top left corner. Following this decision, we deleted the logo from the shopping cart.
+                </li>
+                <li>Within the item selection, again, we fixed the heading of the selection. This heading includes the button to access the cart, which we believe should be accessible at all times while browsing items.
+                </li>
+                <li>Within the item selection, we added different states to the cart button, to show its status (inactive/empty/with items).
+                </li>
+                <li>When the cart is open, we leveled its container to the filter and sorting buttons, to simplify the layout and make the navigation more user friendly.
+                </li>
+                <li>Additionally, we fixed and simplified the content of the open cart. Our main goal was to make it more clear that the item selection is represented per recipient. With this goal, we also modified the title from: Your shopping cart, to: Your item selection.
+                </li>
+                <li>Furthermore, we added an option to delete items directly from the cart rather than just modify its quantity, and we added an additional feature: a calculator (to estimate the cart total, simulating the number of recipients).
+                </li>
+                <li>Moreover, we removed the checkout button from the opened cart to reduce confusion and we changed the hide option to a simple X in the upper left corner of the cart.
+                </li>
+                <li>Within the product cards, we rearranged the add, decrease and remove buttons to make it easier to understand and navigate. Additionally, we returned to our original version of the delete button as it proved to be more intuitive. In order to decide the final aesthetic of the product cards, different versions were drafted and rated by 12 users, which allowed us to arrive at our final iteration.
+                </li>
+            </ul>
+            <div class="video_div">
+                <video id="final_zest_demo_video" width="720" height="520" controls>
+                  <source src="assets/FinalZest.MP4" type="video/mp4">
+                </video>
+              </div>
+              
+        </div>
+
+
+    </main>
+
+</body>
+</html>

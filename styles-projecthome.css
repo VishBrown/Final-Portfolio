@@ -12,7 +12,7 @@ header {
     background-color: #271168;
     display: flex;
     align-items: center;
-    padding: 0 30px;  /* Adjust padding */
+    padding: 0 30px;
     box-sizing: border-box;
     position: relative;
 }
@@ -22,13 +22,13 @@ header .logo {
     left: 20px;
     top: 50%;
     transform: translateY(-50%);
-    height: 80px;  /* Adjust size as needed */
+    height: 80px; 
 }
 
 header nav {
     display: flex;
     justify-content: flex-end;
-    width: calc(100% - 100px);  /* Leave space for logo */
+    width: calc(100% - 100px);  
 }
 
 header nav a {
@@ -40,12 +40,12 @@ header nav a {
 
 
 .container {
-    display: flex;       /* Use Flexbox to arrange children */
-    flex-direction: column; /* Stack children vertically */
-    align-items: center; /* Center children horizontally */
-    width: 100%;         /* Take full width of the viewport */
-    margin: 20px auto;   /* Top and bottom margin for spacing, auto for horizontal centering */
-    text-align: center;  /* Center text inside the container */
+    display: flex;       
+    flex-direction: column; 
+    align-items: center; 
+    width: 100%;        
+    margin: 20px auto;   
+    text-align: center;  
 }
 
 h1 {
@@ -53,27 +53,52 @@ h1 {
 }
 
 a {
-    text-decoration: none; /* Removes underline from all anchor tags */
-    color: inherit; /* Ensures links inherit the text color from their parent elements */
+    text-decoration: none;
+    color: inherit; 
 }
 
 .project {
     display: flex;
-    justify-content: space-between; /* Keep text and image spaced out */
-    align-items: center; /* Vertically align text and image */
+    justify-content: space-between; 
+    align-items: center; 
     background-color: #F9F5F2;
     border-radius: 30px;
-    border: 1px solid #271168;
+    border: 4px solid #271168;
     padding: 20px;
-    margin: 20px 0;       /* Margin around each project for spacing */
-    width: 904px;         /* Fixed width for consistency */
-    height: 279px;        /* Fixed height for consistency */
+    margin: 20px 0;      
+    width: 904px;       
+    height: 279px;   
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+.label-container {
+    position: left;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 5px;
+}
+
+.project .label {
+    width: 120px;
+    height: 30px;
+    display: inline-block; 
+    padding: 2px 2px 2px 2px; 
+    margin: 2px; 
+    background-color: #f0e19f;
+    color: #271168; 
+    font-size: 12px; 
+    border-radius: 1px;
+    font-weight: bold;
+    border: 2px solid #9b8400;
+
+    
+}
+
 .project-text {
-    width: 60%; /* Adjust the width as needed to fit the content */
-    padding-right: 20px; /* Add some padding between the text and the image */
+    width: 60%;
+    padding-right: 20px;
 }
 
 .project-text h2, .project-text p, .project-text span {
@@ -84,28 +109,28 @@ a {
 }
 
 .project-text h2 {
-    font-weight: 400; /* Normal weight for the project title */
+    font-weight: 400;
 }
 
 .project-text p {
-    font-weight: 700; /* Bold weight for the description */
+    font-weight: 700;
 }
 
 .project-image {
-    width: 247px; /* Width of the image container */
-    height: 218px; /* Height of the image container */
+    width: 247px;
+    height: 218px;
     border-radius: 14px;
-    overflow: hidden; /* Ensures nothing spills out of the container */
-    flex-shrink: 0; /* Prevents the image container from shrinking */
+    overflow: hidden; 
+    flex-shrink: 0; 
     border-color: #271168;
     border-width: 2px;
     border-style: solid;
 }
 
 .project-image img {
-    width: 100%; /* Ensure the image covers the full width of the container */
-    height: 100%; /* Ensure the image covers the full height of the container */
-    object-fit: cover; /* Ensures the image covers the container without distortion */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 footer {
@@ -124,4 +149,15 @@ footer a {
 
 footer h3 {
     margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        padding: 10px;
+    }
+
+    .about-section {
+        font-size: 18px;
+        padding: 10px;
+    }
 }
